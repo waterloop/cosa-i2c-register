@@ -1,0 +1,34 @@
+pkg:
+  ide: none
+
+  meta:
+    name: cosa-i2c-register
+    description: Wio package to provided access to AVR registers over I2C
+    version: 1.0.0
+    keywords:
+    - avr
+    - c
+    - c++
+    - wio
+    - cosa
+    license: MIT
+
+  config:
+    minimum_wio_version: 0.3.2
+    supported_platforms:
+    - avr
+    supported_frameworks:
+    - cosa
+    supported_boards:
+    - all
+
+  compile_options:
+    platform: avr
+
+targets:
+  default: tests
+  create:
+    tests:
+      src: tests
+      framework: cosa
+      board: uno
