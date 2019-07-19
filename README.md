@@ -13,7 +13,7 @@ i2c_register.write16(REGISTER_ADDRESS, DATA);
 
 Read data using:
 ```cpp
-i2c_register.write16(REGISTER_ADDRESS);
+i2c_register.read16(REGISTER_ADDRESS);
 ```
 
 
